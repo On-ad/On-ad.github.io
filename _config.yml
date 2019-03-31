@@ -1,7 +1,7 @@
 # Welcome to Jekyll!
 
 # Website settings
-title: "OnAD developers"
+title: OnAD developers
 description: OnAD의 성장일기
 keywords: JS, Python, Marketing, Linux
 baseurl: / # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
