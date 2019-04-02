@@ -5,7 +5,7 @@ title: "OnAD developers"
 description: OnAD의 성장일기
 keywords: JS, Python, Marketing, Linux
 baseurl: / # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
-url: http://on-ad.github.io # url should be 'http://<github_username>.github.io/homepage' as before
+url: http://on-ad.github.io/blog/ # url should be 'http://<github_username>.github.io/homepage' as before
 # url: http://127.0.0.1:4000
 img_path: /static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
@@ -23,13 +23,13 @@ author: # change following line to your infomation.
   cv: # An online CV can be printed as PDF, leave blank if you don't have now
 
 # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
-skill_icon1:
-  - name: icon-apache
-  - name: fa-linux
-skill_icon2:
-  - name: fa-linux
-  - name: icon-apache
-desc: Introduce ourself will be here.  # Describe yourself.
+  skill_icon1:
+    - name: icon-apache
+    - name: fa-linux
+  skill_icon2:
+    - name: fa-linux
+    - name: icon-apache
+  desc: Introduce ourself will be here.  # Describe yourself.
 
 # comment
 disqus: off # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
