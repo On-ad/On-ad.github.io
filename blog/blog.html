@@ -21,20 +21,20 @@ permalink: /blog/
                 <div class="row">
                     <div class="col-md-10">
                         <div class="vote-actions"></div>
-                        <div class="col-md-2" style="text-align: center;">
+                        <div class="col-md-2" style="text-align: center; display: inline;">
                             <div style="width: 60px; height: 60px; ;background: url('/static/assets/img/writer_img/{{post.writer}}.jpg') no-repeat center center; background-size:cover; border-radius: 50%;"></div>
                             <p>{{ post.writer }}</p>
                             <p>{{ post.date | date: "%-d %b %Y"}}</p>
                         </div>
 
-                        <div class="cold-md-7" style="text-align: center;">
+                        <div class="cold-md-7" style="text-align: center; display: inline;">
                         <a href="{{ post.url | prepend: site.baseurl }}" class="vote-title" style="margin-top:20%">
                             {{ post.title }}
                         </a>
                         <p>{{ post.desc}} </p>
                         </div>                        
                     </div>
-                    <div class="col-md-1">
+                    <div class="col-md-1" style="display: inline;">
                         <div class="vote-icon">
                             {% if post.icon %}<i class="fa {{ post.icon }}"> </i>{% endif %}
                         </div>
