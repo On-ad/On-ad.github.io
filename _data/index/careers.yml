@@ -1,6 +1,20 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
+    detail: From Python to JS&Node.js
+    i18n: company_c
+  desc: 
+    detail: In Pusan
+    i18n: company_c_desc
+  date: 
+    detail: Apr. 2019
+    i18n: company_c_date
+  job:
+    detail: JS Family
+    i18n: company_c_job
+  icon: fa-plus-square
+  
+- name:
     detail: SW 챌린지 공모전 2위
     i18n: company_a
   desc:
@@ -28,16 +42,3 @@
     i18n: company_b_job
   icon: fa-plus-square
 
-- name:
-    detail: From Python to JS&Node.js
-    i18n: company_c
-  desc: 
-    detail: In Pusan
-    i18n: company_c_desc
-  date: 
-    detail: Apr. 2019
-    i18n: company_c_date
-  job:
-    detail: JS Family
-    i18n: company_c_job
-  icon: fa-plus-square
