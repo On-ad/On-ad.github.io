@@ -22,8 +22,7 @@ permalink: /blog/
                     <div class="col-md-10">
                         <div class="vote-actions"></div>
                         <div>
-                            <img src="{{ "post.writer_img" | prepend: site.baseurl/static/assets/img/writer_img/ }}"
-                            style="border-radius: 50%;">
+                            <img src="{{ post.writer_img | prepend: site.baseurl/static/assets/img/writer_img/ }}" style="border-radius: 50%;">
                             <p>{{ post.writer }}</p>
                             <p>{{ post.date }}</p>
                         </div>
