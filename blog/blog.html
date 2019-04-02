@@ -22,7 +22,7 @@ permalink: /blog/
                     <div class="col-md-10">
                         <div class="vote-actions"></div>
                         <div>
-                            <img src="{{ "post.writer_img" | prepend: site.baseurl + "/static/assets/img/writer_img/" }}" style="border-radius: 50%;">
+                            <img style="background-image: url({{ '/static/assets/img/writer_img/{{post.writer_img}}' | prepend: site.baseurl }}; background-size:cover; border-radius: 50%;">
                             <p>{{ post.writer }}</p>
                             <p>{{ post.date | date: "%-d %b %Y"}}</p>
                         </div>
