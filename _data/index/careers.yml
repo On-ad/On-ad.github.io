@@ -29,15 +29,15 @@
   icon: fa-plus-square
 
 - name:
-  detail: Python -> JS & Node.js
-  i18n: company_c
-desc: 
-  detail: In Pusan
-  i18n: company_c_desc
-date: 
-  detail: Apr. 2019
-  i18n: company_c_date
-job:
-  detail: JS Family
-  i18n: company_c_job
-icon: fa-plus-square
+    detail: Python -> JS & Node.js
+    i18n: company_c
+  desc: 
+    detail: In Pusan
+    i18n: company_c_desc
+  date: 
+    detail: Apr. 2019
+    i18n: company_c_date
+  job:
+    detail: JS Family
+    i18n: company_c_job
+  icon: fa-plus-square
