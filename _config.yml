@@ -10,7 +10,7 @@ url: http://on-ad.github.io  # url should be 'http://<github_username>.github.io
 img_path: /static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
 
 # author -- index page "about me" section
-author:  # change following line to your infomation.
+author: Knag donggi # change following line to your infomation.
   name: OnAD # Be used at blog posts' author.
   first_name: AD  # Be used at index page about me section.
   last_name: On  # Be used at index page about me section.
