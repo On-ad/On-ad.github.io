@@ -8,6 +8,7 @@ writer: 전민관
 categories: [Marketing]
 tags: [Jalpc,Jekyll]
 icon: icon-node.js
+catalog: true
 ---
 
 This is a raw snippet:

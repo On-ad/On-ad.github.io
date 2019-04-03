@@ -6,6 +6,7 @@ desc: "Quick test on writing code snippets in a blog post"
 keywords: "Jalpc,Jekyll,gh-pages,website,blog,easy"
 writer: 박영근
 categories: [Startup]
+catalog: true
 tags: [Jalpc,Jekyll]
 icon: icon-js
 ---
