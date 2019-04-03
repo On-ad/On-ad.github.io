@@ -46,7 +46,7 @@ $(function(){
                                 {{ post.content | strip_html | truncate:100 }}
                             </p>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-6" style="text-align:center">
                                     <h5 style="display: inline;">Tags:</h5>
                                     {% for tag in post.tags %}
                                     <button class="btn btn-white btn-xs">{{ tag }}</button>
