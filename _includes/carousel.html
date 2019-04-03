@@ -17,10 +17,8 @@
             <!-- Set background for slide in css -->
             <div
             class="header-back"
-            style="background-image: url({{ '/static/assets/img/' | prepend: site.baseurl }}{{ site.data.index.banners[0].src }}); background-size:cover;
-            font-size:80px; color: white; font-weight: bold; text-align:center;"
+            style="background-image: url({{ '/static/assets/img/' | prepend: site.baseurl }}{{ site.data.index.banners[0].src }}); background-size:cover;"
             title="{{ site.data.index.banners[0].title }}">
-            야! 너두 개발할 수 있써!
             </div>
         </div>
 
@@ -34,7 +32,10 @@
                 </div>
             </div>
             <!-- Set background for slide in css -->
-            <div class="header-back" style="background-image: url({{ "/static/assets/img/"  | prepend: site.baseurl }}{{ banner.src }}); background-size:cover;" title="{{ banner.title }}"></div>
+            <div class="header-back" style="font-size:80px; color: white; font-weight: bold; text-align:center; font-family: 'Open Sans', helvetica, arial, sans-serif;
+            background-image: url({{ "/static/assets/img/"  | prepend: site.baseurl }}{{ banner.src }}); background-size:cover;" title="{{ banner.title }}">
+            <div style="margin-top:30%">야 너두 개발할 수 있써!</div>
+            </div>
         </div>
         {% endfor %}
 
