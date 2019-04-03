@@ -5,7 +5,7 @@ layout: default
 <div class="wrapper wrapper-content  animated fadeInRight article">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
-            <div class="ibox">
+            <div class="co-md-9">
                 <div class="ibox-content">
                     <div class="pull-right">
                     	{% for category in page.categories %}
@@ -49,6 +49,23 @@ layout: default
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="col-md-3">
+                {% if page.catalog %}
+                <div class="
+                    col-lg-2 col-lg-offset-0
+                    visible-lg-block
+                    sidebar-container
+                    catalog-container">
+                    <div class="side-catalog">
+                        <hr class="hidden-sm hidden-xs">
+                        <h5>
+                            <a class="catalog-toggle" href="#">CATALOG</a>
+                        </h5>
+                        <ul class="catalog-body"></ul>
+                    </div>
+                </div>
+            {% endif %}
             </div>
         </div>
     </div>
