@@ -4,10 +4,10 @@ title:  "code snippet test"
 date:   2019-03-28
 desc: "Quick test on writing code snippets in a blog post"
 keywords: "Jalpc,Jekyll,gh-pages,website,blog,easy"
-writer: 박영근
-categories: [Startup]
+writer: 전민관
+categories: [Marketing]
 tags: [Jalpc,Jekyll]
-icon: icon-js
+icon: icon-node.js
 ---
 
 This is a raw snippet:

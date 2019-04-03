@@ -3,7 +3,8 @@ layout:     post
 title:      "마크다운 문법 및 사용법"
 subtitle:   "블로깅을 위한 마크다운 사용법!"
 date:       2019-03-31 15:00:00
-author:     "hwasurr"
+writer: 박찬우
+categories: [Network]
 header-img: "img/post-bg-2015.jpg"
 catalog: true
 tags:
