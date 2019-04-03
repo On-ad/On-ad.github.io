@@ -1,10 +1,24 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
+    detail: OnAD 기술블로그 개설
+    i18n: company_b
+  desc: 
+    detail: OnAD의 성장일기 시작합니다
+    i18n: company_b_desc
+  date: 
+    detail: Apr. 2019
+    i18n: company_b_date
+  job:
+    detail: From A to Z
+    i18n: company_b_job
+  icon: fa-plus-square
+
+- name:
     detail: From Python to JS&Node.js
     i18n: company_c
   desc: 
-    detail: In Pusan
+    detail: 파이썬 플라스크에서 Node.js로 언어전환
     i18n: company_c_desc
   date: 
     detail: Apr. 2019
@@ -18,7 +32,7 @@
     detail: SW 챌린지 공모전 2위
     i18n: company_a
   desc:
-    detail: In Seoul
+    detail: 마케터와 크리에이터의 최적화 매칭 플랫폼으로 2위 수상
     i18n: company_a_desc
   date:
     detail: Feb. 2019
@@ -32,13 +46,13 @@
     detail: 부산대학교 테크톤 사업화 최우수상
     i18n: company_b
   desc: 
-    detail: In Pusan
+    detail: 마케터-크리에이터 매칭 플랫폼 초기 모델 개발
     i18n: company_b_desc
   date: 
     detail: Nov. 2018
     i18n: company_b_date
   job:
-    detail: Full Stack Developers
+    detail: First verion of OnAD
     i18n: company_b_job
   icon: fa-plus-square
 
