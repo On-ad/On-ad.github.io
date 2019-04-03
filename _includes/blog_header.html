@@ -41,10 +41,14 @@
         </div>
     </nav>
 </div>
-<!-- {% if site.blog_carousel %}
-{% include carousel.html %}
-{% endif %} -->
-<div
-    class="carousel"
-    style="background: url('/static/assets/img/header_bg/{{page.header-bg}}.jpg') no-repeat center center; background-size:cover;">
-</div>
+{% if site.blog_carousel %}
+    {% if page.header-bg %}
+        <div
+        class="carousel"
+        style="background: url('/static/assets/img/header_bg/{{page.header-bg}}.jpg') no-repeat center center; background-size:cover;">
+        </div>
+    {% else %}
+        {% include carousel.html %}
+    {% endif %}
+{% endif %}
+
