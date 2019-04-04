@@ -18,7 +18,7 @@
     detail: From Python to JS&Node.js
     i18n: company_c
   desc: 
-    detail: 파이썬 플라스크에서 Node.js로 언어전환
+    detail: 파이썬 flask에서 Node.js로 서버전환
     i18n: company_c_desc
   date: 
     detail: Apr. 2019
