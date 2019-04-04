@@ -66,11 +66,10 @@ encoding: utf-8
 
 ighter: rouge
 anchorjs: true
-exclude: ["less"]
+
 # Markdown settings
 markdown: kramdown
 kramdown:
-  input: GFM                            # use Github Flavored Markdown !important
-  syntax_highlighter_opts:
+input: GFM                            # use Github Flavored Markdown !important
 syntax_highlighter: rouge
 
