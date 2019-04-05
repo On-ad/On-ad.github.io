@@ -5,7 +5,7 @@ desc: "블로깅을 위한 마크다운 사용법!"
 date:       2019-03-31 
 writer: 강동기
 categories: [Etc]
-header-img: "post-bg-papers"
+header-bg: post-bg-papers
 tags: [Blog,Markdown]
 icon: icon-wordpress
 ---
