@@ -5,7 +5,7 @@ desc: "블로깅을 위한 마크다운 사용법!"
 date:       2019-03-31 
 writer: 강동기
 categories: [Etc]
-header-img: post-bg-papers
+header-bg: "post-bg-papers"
 tags: [Blog,Markdown]
 icon: icon-wordpress
 ---
@@ -25,7 +25,7 @@ icon: icon-wordpress
 	desc:   "블로그의 간단한 설명적으세요"
 	date:       0000-00-00
 	writer:     한글이름
-	header-img: post-bg-xxxxx  (assets/img/header_bg 안의 파일명만 입력하면 됩니다)
+	header-img: "post-bg-xxxxx"  (assets/img/header_bg 안의 파일명만 입력하면 됩니다)
 	categories: [Xxxxxx] ( 반드시 첫글자는 대문자 / 사용가능 범주 - Javascript, Node.js, Python, Network, Security, Html&css, Marketing, Startup, Etc )
 	tags: [xxxx,xxxx]
 	icon: icon-xxxxxxxx (대부분의 언어들을 소문자로 xxxxxxxx에 쓰면됩니다)		
