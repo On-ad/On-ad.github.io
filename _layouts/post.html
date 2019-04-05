@@ -19,7 +19,7 @@ layout: default
                             {{ page.title }}
                         </h1>
                     </div>
-                    <div style="line-height:160%; font-size:120%;">
+                    <div id="content">
                     	{{ content }}
                     </div>
                     <hr>
@@ -59,4 +59,7 @@ layout: default
 
 </div>
 
+<script>
+$('#content').find('*').removeAttr('style');
+</script>
 
