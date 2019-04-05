@@ -65,7 +65,7 @@ encoding: utf-8
 # other settings
 
 ighter: rouge
-anchorjs: true
+
 
 # Markdown settings
 markdown: kramdown
