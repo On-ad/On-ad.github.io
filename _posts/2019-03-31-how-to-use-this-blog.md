@@ -5,8 +5,8 @@ desc: "블로깅을 위한 마크다운 사용법!"
 date:       2019-03-31 
 writer: 강동기
 categories: [Etc]
-header-bg: "post-bg-papers"
-tags: [Blog,Markdown]
+header-bg: "post-bg-redmine"
+tags: [issue-tracking,redmine,project-managing]
 icon: icon-wordpress
 ---
 
