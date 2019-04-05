@@ -6,7 +6,7 @@ date:       2019-03-31
 writer: 강동기
 categories: [Etc]
 header-bg: "post-bg-redmine"
-tags: [issue-tracking,redmine,project-managing]
+tags: [Blog,markdown]
 icon: icon-wordpress
 ---
 
