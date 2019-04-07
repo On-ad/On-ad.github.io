@@ -27,9 +27,7 @@ Prettier는 코드를 자동으로 정리해주는 프로그램으로, 코드 �
 
 # npm 모듈 관리
 
-![npm](/static/assets/img/post_img/hwasurr/npm.png){:width="350" height="200"}
-
-<img src="/static/assets/img/post_img/hwasurr/npm.png" width="150" height="50">
+![npm](/static/assets/img/post_img/hwasurr/npm.png)
 
 npm은 (Nodejs Package Manager) 의 약자로, npm은 Node.js로 만들어진 모듈을 웹에서 받아서 설치하고 관리해주는 프로그램으로, 단 몇 줄의 명령어로 기존에 공개된 모듈들을 설치하고, 활용할 수 있다.
 
