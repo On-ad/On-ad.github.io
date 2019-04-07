@@ -65,9 +65,9 @@ npx install-peerdeps --dev eslint-config-wesbos
 
 똑같이 npx 를 통해 다운로드 받는데 --dev 를 --global로 치환한다.
 
-    ~~~bash
-    npx install-peerdeps --global eslint-config-wesbos
-    ~~~
+~~~bash
+npx install-peerdeps --global eslint-config-wesbos
+~~~
 
 이후 글로벌 eslint 환경설정 파일을 만들고, 위에서와 같이 채워넣는다.  
 on Mac &rarr;  `~/.eslintrc`  
