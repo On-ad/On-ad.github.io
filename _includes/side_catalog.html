@@ -1,5 +1,4 @@
 <!-- Side Catalog -->
-{% if page.catalog %}
 <script type="text/javascript">
     function generateCatalog(selector) {
         _containerSelector = '.markdown-body'
@@ -24,7 +23,7 @@
         return true;
     }
 
-    generateCatalog(".catalog-body");
+    document.onload = generateCatalog(".catalog-body");
 
     // toggle side catalog
     $(".catalog-toggle").click((function (e) {
@@ -52,4 +51,3 @@
         });
     });
 </script>
-{% endif %}
