@@ -1,6 +1,6 @@
-<!-- Side Catalog
+<!-- Side Catalog -->
 <script type="text/javascript">
-    function generateCatalog(selector) {
+    jQuery(document).ready(function generateCatalog(selector) {
         _containerSelector = '.markdown-body'
 
         // init
@@ -21,9 +21,9 @@
         });
 
         return true;
-    }
+    });
 
-    window.onload = generateCatalog(".catalog-body");
+    // window.onload = generateCatalog(".catalog-body");
 
     // toggle side catalog
     $(".catalog-toggle").click((function (e) {
@@ -50,4 +50,4 @@
             padding: 80
         });
     });
-</script> -->
+</script>
