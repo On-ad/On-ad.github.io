@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
 
   //primary navigation slide-in effect
   if ($(window).width() > MQL) {
-      var bannerHeight  = $('#carousel').height();     
+      var bannerHeight  = $('.carousel').height();     
       $(window).on('scroll', {
               previousTop: 0
           },
