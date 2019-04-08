@@ -30,12 +30,12 @@
         return true;
     }
 
-    generateCatalog(".catalog-body");
+    generateCatalog("#catalog-body");
 
     // toggle side catalog
-    $(".catalog-toggle").click((function (e) {
+    $("#catalog-toggle").click((function (e) {
         e.preventDefault();
-        $('.side-catalog').toggleClass("fold")
+        $('#side-catalog').toggleClass("fold")
     }))
 
     /*
@@ -43,7 +43,7 @@
      * Fork by Hux to support padding
      */
     async("{{ '/static/js/jquery.nav.js' | prepend: site.baseurl }}", function () {
-        $('.catalog-body').onePageNav({
+        $('#catalog-body').onePageNav({
             currentClass: "active",
             changeHash: !1,
             easing: "swing",
