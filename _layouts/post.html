@@ -69,7 +69,7 @@ layout: default
                 </div>
                 <!-- side-catalog -->
                 <script type="text/javascript">
-                    function generateCatalog(selector) {
+                    (function generateCatalog(selector) {
                         _containerSelector = '.markdown-body'
 
                         // init
@@ -90,9 +90,9 @@ layout: default
                         });
 
                         return true;
-                    }
+                    })(".catalog-body");
 
-                    generateCatalog(".catalog-body");
+                    // generateCatalog(".catalog-body");
 
                     // toggle side catalog
                     $(".catalog-toggle").click((function (e) {
