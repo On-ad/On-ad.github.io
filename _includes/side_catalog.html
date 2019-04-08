@@ -38,16 +38,9 @@
             scrollThreshold: .1,
             begin: null,
             end: null,
-            scrollTo: function (target, callback) {
-                var offset = $(target).offset().top - this.config.padding;
-
-                $('html, body').animate({
-                    scrollTop: offset
-                }, this.config.scrollSpeed, this.config.easing, callback);
-            },
+            scrollChange: null,
             padding: 80
         });
     });
-
 
 </script>
