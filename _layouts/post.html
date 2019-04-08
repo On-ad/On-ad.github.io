@@ -94,7 +94,7 @@ layout: default
                     $(".catalog-toggle").click((function (e) {
                         e.preventDefault();
                         $('.side-catalog').toggleClass("fold")
-                    }))
+                    }));
 
                     async("{{ '/static/js/jquery.nav.js' | prepend: site.baseurl }}", function () {
                         $('.catalog-body').onePageNav({
