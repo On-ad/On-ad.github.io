@@ -9,30 +9,32 @@ layout: default
             <div class="col-md-8">
                 <div class="ibox-content">
                     <div class="pull-right">
-                    	{% for category in page.categories %}
-                        	<a class="btn btn-white btn-xs" href="{{ category | downcase | prepend: '/' | prepend: site.baseurl }}">{{ category }}</a>
+                        {% for category in page.categories %}
+                        <a class="btn btn-white btn-xs"
+                            href="{{ category | downcase | prepend: '/' | prepend: site.baseurl }}">{{ category }}</a>
                         {% endfor %}
                     </div>
                     <div class="text-center article-title">
-                    <span class="text-muted"><i class="fa fa-clock-o"></i> {{ page.date | date: "%-d %b %Y" }}</span>
+                        <span class="text-muted"><i class="fa fa-clock-o"></i>
+                            {{ page.date | date: "%-d %b %Y" }}</span>
                         <h1>
                             {{ page.title }}
                         </h1>
                     </div>
                     <div class="markdown-body">
-                    	{{ content }}
+                        {{ content }}
                     </div>
                     <hr>
                     <div class="row">
                         <div class="col-md-6">
-                                <h5 style="display: inline;">Tags:</h5>
-                                {% for tag in page.tags %}
-                                    <button class="btn btn-white btn-xs" type="button">{{ tag }}</button>
-                                {% endfor %}
+                            <h5 style="display: inline;">Tags:</h5>
+                            {% for tag in page.tags %}
+                            <button class="btn btn-white btn-xs" type="button">{{ tag }}</button>
+                            {% endfor %}
                         </div>
                         <div class="col-md-6">
                             <div class="small text-right">
-                                
+
                             </div>
                         </div>
                     </div>
@@ -59,3 +61,38 @@ layout: default
 
 </div>
 
+{% if site.anchorjs %}
+<!-- async load function -->
+<script>
+    function async(u, c) {
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+        s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js", function () {
+        anchors.options = {
+            visible: 'always',
+            placement: 'right',
+            icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link {
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top: -0.1em;
+        }
+    }
+</style>
+{% endif %}
