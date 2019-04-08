@@ -72,3 +72,6 @@ markdown: kramdown
 kramdown:
 input: GFM                            # use Github Flavored Markdown !important
 syntax_highlighter: rouge
+
+# anchorjs settings
+anchorjs: true
