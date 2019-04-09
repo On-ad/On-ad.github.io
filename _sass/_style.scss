@@ -3841,6 +3841,9 @@ body {
 .side-catalog.fold .catalog-body {
   display: none;
 }
+.side-catalog.fold .profile-body {
+  display: none;
+}
 .side-catalog .catalog-toggle::before {
   content: "−";
   position: relative;
