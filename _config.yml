@@ -76,5 +76,5 @@ syntax_highlighter: rouge
 # anchorjs settings
 anchorjs: true
 
-# Sidebar settings
-sidebar:                           # whether or not using Sidebar.
+writer:
+
