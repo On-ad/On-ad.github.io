@@ -7,12 +7,14 @@ layout: default
         <div class="col-lg-10 col-lg-offset-1">
             <div class="col-md-2">
                 {% if page.writer %}
-                <h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT AUTHOR</a></h5>
+                <h5>ABOUT AUTHOR</h5>
                 <div class="sidebar-container">
                     <div class="short-about">
-                        <div
-                            style="width: 100px; height: 100px; ;background: url('/static/assets/img/writer_img/{{page.writer}}.jpg') no-repeat center center; background-size:cover; border-radius: 50%; margin: 0 auto;">
-                        </div>
+                        <a href="https://github.com/{{page.github_id}}">
+                            <div
+                                style="width: 100px; height: 100px; ;background: url('/static/assets/img/writer_img/{{page.writer}}.jpg') no-repeat center center; background-size:cover; border-radius: 50%; margin: 0 auto;">
+                            </div>
+                        </a>
                         <p>{{% post.description %}}</p>
                     </div>
                 </div>
