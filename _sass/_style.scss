@@ -3847,18 +3847,6 @@ body {
   margin-right: 5px;
   bottom: 1px;
 }
-.side-catalog .profile .fold .catalog-toggle::before {
-  content: "+";
-}
-.side-catalog .profile .fold .catalog-body {
-  display: none;
-}
-.side-catalog .profile .catalog-toggle::before {
-  content: "−";
-  position: relative;
-  margin-right: 5px;
-  bottom: 1px;
-}
 .side-catalog .catalog-body {
   position: relative;
   list-style: none;
