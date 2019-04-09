@@ -24,12 +24,12 @@
 
     $(".catalog-toggle").eq(0).click((function (e) {
         e.preventDefault();
-        $('.profile').toggleClass("fold")
+        $('.side-catalog').eq(0).toggleClass("fold")
     }));
 
     $(".catalog-toggle").eq(1).click((function (e) {
         e.preventDefault();
-        $('.side-catalog').toggleClass("fold")
+        $('.side-catalog').eq(1).toggleClass("fold")
     }));
 
     async("{{ '/static/js/jquery.nav.js' | prepend: site.baseurl }}", function () {
