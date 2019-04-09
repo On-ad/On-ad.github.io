@@ -23,6 +23,13 @@ jQuery(document).ready(function($) {
               } else {
                   $catalog.removeClass('fixed')
               }
+              $about_author.show()
+              if (currentTop > (bannerHeight + 41)) {
+                  $about_author.addClass('fixed')
+              } else {
+                  $about_author.removeClass('fixed')
+              }
+              
           });
   }
 });
