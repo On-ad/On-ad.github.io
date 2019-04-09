@@ -10,6 +10,7 @@ categories: [Etc]
 header-bg: "post-bg-papers"
 tags: [Blog,markdown]
 icon: icon-wordpress
+catalog: true
 ---
 
 > “Yeah It's on. ”
