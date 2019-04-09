@@ -4,7 +4,7 @@ title:      "마크다운 문법 및 사용법(feat.강화수)"
 desc: "블로깅을 위한 마크다운 사용법!"
 date:       2019-03-31 
 writer: 강동기
-introduce: "안녕하십니까. OnAD의 대표 강동기입니다. 여자친구 구합니다"
+about-me: "안녕하십니까. OnAD의 대표 강동기입니다. 여자친구 구합니다"
 github_id: "GoMotiv"
 categories: [Etc]
 header-bg: "post-bg-papers"
