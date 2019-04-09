@@ -5,7 +5,22 @@ layout: default
 <div class="wrapper wrapper-content  animated fadeInRight article">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
-            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                {% if page.writer %}
+                <div class="sidebar-container">
+                    <section class="visible-md visible-lg">
+                        <hr>
+                        <h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT Author</a></h5>
+                        <div class="short-about">
+                            <div
+                                style="width: 60px; height: 60px; ;background: url('/static/assets/img/writer_img/{{post.writer}}.jpg') no-repeat center center; background-size:cover; border-radius: 50%; margin: 0 auto;">
+                            </div>
+                            <p>{{% page.writer_description %}}</p>
+                        </div>
+                    </section>
+                </div>
+                {% endif %}
+            </div>
             <div class="col-md-8">
                 <div class="ibox-content">
                     <div class="pull-right">
