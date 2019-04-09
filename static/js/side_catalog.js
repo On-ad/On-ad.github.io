@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
                   $catalog.removeClass('fixed')
               }
               $about_author.show()
-              if (currentTop > (bannerHeight + 61)) {
+              if (currentTop > (bannerHeight + 41)) {
                   $about_author.addClass('fixed')
               } else {
                   $about_author.removeClass('fixed')
