@@ -11,7 +11,6 @@ jQuery(document).ready(function($) {
           function() {
               var currentTop = $(window).scrollTop(),
                   $catalog = $('.side-catalog');
-                  $about_author = $('.short-about');
 
               //check if user is scrolling up by mouse or keyborad
               this.previousTop = currentTop;
@@ -22,12 +21,6 @@ jQuery(document).ready(function($) {
                   $catalog.addClass('fixed')
               } else {
                   $catalog.removeClass('fixed')
-              }
-              $about_author.show()
-              if (currentTop > (bannerHeight + 41)) {
-                  $about_author.addClass('fixed')
-              } else {
-                  $about_author.removeClass('fixed')
               }
               
           });
