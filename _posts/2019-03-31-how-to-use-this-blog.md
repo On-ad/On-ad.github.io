@@ -4,7 +4,7 @@ title:      "마크다운 문법 및 사용법(feat.강화수)"
 desc: "블로깅을 위한 마크다운 사용법!"
 date:       2019-03-31 
 writer: 강동기
-introduce: "안녕하십니까. OnAD의 대표 강동기입니다. 여자친구 구합니다"
+about-me: "안녕하십니까. OnAD의 대표 강동기입니다. 여자친구 구합니다"
 github_id: "GoMotiv"
 categories: [Etc]
 header-bg: "post-bg-papers"
@@ -29,7 +29,7 @@ icon: icon-wordpress
   desc:   "블로그의 간단한 설명적으세요"
   date:       0000-00-00
   writer:     한글이름
-  introduce: "포스트의 프로필로, 자신을 소개하는 말"
+  about-me: "포스트의 프로필로, 자신을 소개하는 말"
   github_id: "자신의 깃허브 아이디"
   header-img: "post-bg-xxxxx"  (assets/img/header_bg 안의 파일명만 입력하면 됩니다)
   categories: [Xxxxxx] ( 반드시 첫글자는 대문자 / 사용가능 범주 - Javascript, Node.js, Python, Network, Security, Html&css, Marketing, Startup, Etc )

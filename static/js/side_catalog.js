@@ -11,6 +11,7 @@ jQuery(document).ready(function($) {
           function() {
               var currentTop = $(window).scrollTop(),
                   $catalog = $('.side-catalog');
+                  $about_author = $('.short-about');
 
               //check if user is scrolling up by mouse or keyborad
               this.previousTop = currentTop;
