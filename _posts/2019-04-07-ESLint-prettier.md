@@ -4,6 +4,8 @@ title:  "ESLint 와 Prettier 사용하여 VScode에서 개발표준을 쉽게 �
 date:   2019-04-07
 desc: "npm 라이브러리 ESLint와 Prettier를 vscode의 환경설정을 통해 개발표준을 쉽게 적용시켜 소스코드의 품질을 유지할 수 있도록 하는 방법!"
 writer: 강화수
+introduce: "안녕하세요 온애드의 개발자 강화수입니다. 지속적인 성장을 추구합니다."
+github_id: "hwasurr"
 header-bg: "post-bg-prettier"
 categories: [Etc]
 catalog: true
