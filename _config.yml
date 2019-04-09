@@ -76,5 +76,3 @@ syntax_highlighter: rouge
 # anchorjs settings
 anchorjs: true
 
-writer:
-
