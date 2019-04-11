@@ -3906,8 +3906,11 @@ body {
 .side-catalog .catalog-body .active a {
   color: #0085a1!important;
 }
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
   .side-catalog {
+    display: none;
+  }
+  .side-catalog .fixed{
     display: none;
   }
 }
