@@ -112,7 +112,7 @@ layout: default
 <script>
     async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js", function () {
         anchors.options = {
-            visible: 'always',
+            visible: 'hover',
             placement: 'left',
             icon: '#'
         };
@@ -124,12 +124,10 @@ layout: default
     @media all and (min-width: 800px) {
         .anchorjs-link {
             transition: all .25s linear;
-            display: none;
         }
 
         *:hover>.anchorjs-link {
             margin-left: -1.125em !important;
-            display: visible;
         }
     }
 </style>
