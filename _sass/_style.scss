@@ -1799,6 +1799,13 @@ ul.clear-list:first-child {
   display: block;
 }
 
+.vote-title {
+  &.active, &:active, &:focus, &:hover {
+    color: #3385FF;
+    text-decoration: none;
+  }
+}
+
 .mail-search {
   max-width: 300px;
 }
@@ -3910,4 +3917,15 @@ body {
   .side-catalog {
     display: none;
   }
+}
+
+
+// 블로그 제목
+
+.vote-title h2 {
+  font-weight: 700;
+}
+
+.blog-item-container .col-md-12:hover {
+  background: #fbfbfb;
 }
