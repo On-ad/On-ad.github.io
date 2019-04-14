@@ -616,6 +616,10 @@ button.dim {
   }
 }
 
+.btn-link p {
+  margin-top: 20px;
+}
+
 .btn-white {
   color: inherit;
   background: #fff;
@@ -1871,7 +1875,7 @@ ul.clear-list:first-child {
 }
 
 .article h1, .blog h2 {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .contact-type {
@@ -3918,7 +3922,7 @@ body {
 // 블로그 제목
 
 .vote-title h2 {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .blog-item-container .col-md-12:hover {
