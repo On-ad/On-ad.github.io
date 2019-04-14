@@ -15,10 +15,10 @@
   icon: fa-plus-square
 
 - name:
-    detail: From Python to JS&Node.js
+    detail: From Python to MERN
     i18n: company_c
   desc: 
-    detail: 파이썬 flask에서 Node.js로 서버전환
+    detail: 파이썬 flask에서 MERN stack 으로 서버전환
     i18n: company_c_desc
   date: 
     detail: Apr. 2019

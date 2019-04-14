@@ -1,16 +1,16 @@
 <!-- jPages -->
 <script type="text/javascript">
-$(function(){
-  /* initiate the plugin */
-  $("div.pag-holder").jPages({
-      containerID  : "pag-itemContainer",
-      perPage      : 5,  /* num of items per page */
-      startPage    : 1,
-      startRange   : 1,
-      midRange     : 3,
-      endRange     : 1
-  });
-});
+    $(function () {
+        /* initiate the plugin */
+        $("div.pag-holder").jPages({
+            containerID: "pag-itemContainer",
+            perPage: 5,  /* num of items per page */
+            startPage: 1,
+            startRange: 1,
+            midRange: 3,
+            endRange: 1
+        });
+    });
 </script>
 
 <div class="row">
@@ -33,15 +33,17 @@ $(function(){
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="col-md-12" style="border-top:1px solid #e7eaec; padding-bottom:2%">
                         <div class="col-md-3" style="text-align: center; margin-top:2.5%">
-                            <div style="width: 60px; height: 60px; ;background: url('/static/assets/img/writer_img/{{post.writer}}.jpg') no-repeat center center; background-size:cover; border-radius: 50%; margin: 0 auto;"></div>
+                            <div
+                                style="width: 60px; height: 60px; ;background: url('/static/assets/img/writer_img/{{post.writer}}.jpg') no-repeat center center; background-size:cover; border-radius: 50%; margin: 0 auto;">
+                            </div>
                             <p>{{ post.writer }}</p>
-                            <i class="fa fa-clock-o"></i> {{ post.date | date: "%-d %b %Y" }} 
+                            <i class="fa fa-clock-o"></i> {{ post.date | date: "%-d %b %Y" }}
                         </div>
                         <div class="col-md-7">
                             <a href="{{ post.url | prepend: site.baseurl }}" class="btn-link">
-                                <h2>{{ post.title }}</h2>
+                                <h2>{{ post.categories}} {{ post.title }}</h2>
                             </a>
-                            
+
                             <p>
                                 {{ post.content | strip_html | truncate:100 }}
                             </p>
