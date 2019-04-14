@@ -1966,7 +1966,7 @@ ul.clear-list:first-child {
     border-bottom: 1px solid #e7eaec;
   }
   &:hover {
-    background: #fbfbfb;
+    background: #dddd;
   }
 }
 
@@ -1985,7 +1985,7 @@ ul.clear-list:first-child {
 .vote-title {
   color: inherit;
   &:focus, &:hover {
-    color: #dddd;
+    color: inherit;
   }
   font-size: 18px;
   font-weight: 600;
