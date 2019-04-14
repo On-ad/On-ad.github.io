@@ -3926,9 +3926,8 @@ body {
 }
 
 .blog-item-container .col-md-12 {
-  transition-duration: 1s;
+  text-align: center;
   &:hover {
     background: #fbfbfb;
-    text-align: center;
   }
 }
