@@ -1969,7 +1969,7 @@ ul.clear-list:first-child {
   &:hover {
     background: #dddd;
     .vote-icon {
-      color:black;
+      color: rgb(99, 159, 248);
     }
   }
 }
@@ -3933,5 +3933,8 @@ body {
   text-align: center;
   &:hover {
     background: #dddd;
+    .vote-icon {
+      color: rgb(99, 159, 248);
+    }
   }
 }
