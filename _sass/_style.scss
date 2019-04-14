@@ -599,6 +599,8 @@ button.dim {
 
 .btn-link {
   color: inherit;
+  font-size: 18px;
+  font-weight: 600;
   &.active, &:active, &:focus, &:hover {
     color: #3385FF;
     text-decoration: none;
@@ -1797,13 +1799,6 @@ ul.clear-list:first-child {
 
 .vote-icon, .vote-title {
   display: block;
-}
-
-.vote-title {
-  &.active, &:active, &:focus, &:hover {
-    color: #3385FF;
-    text-decoration: none;
-  }
 }
 
 .mail-search {
