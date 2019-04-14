@@ -1985,7 +1985,7 @@ ul.clear-list:first-child {
 .vote-title {
   color: inherit;
   &:focus, &:hover {
-    color: inherit;
+    color: #dddd;
   }
   font-size: 18px;
   font-weight: 600;
@@ -3928,6 +3928,6 @@ body {
 .blog-item-container .col-md-12 {
   text-align: center;
   &:hover {
-    background: #fbfbfb;
+    background: #dddd;
   }
 }
