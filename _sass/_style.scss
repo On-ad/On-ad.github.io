@@ -3925,8 +3925,10 @@ body {
   font-weight: 600;
 }
 
-.blog-item-container .col-md-12:hover {
-  background: #fbfbfb;
-  text-align: center;
-  transition-duration: 1s
+.blog-item-container .col-md-12 {
+  transition-duration: 1s;
+  &:hover {
+    background: #fbfbfb;
+    text-align: center;
+  }
 }
