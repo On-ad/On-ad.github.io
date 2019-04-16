@@ -33,7 +33,7 @@ catalog: true
   about-me: "포스트의 프로필로, 자신을 소개하는 말"
   github_id: "자신의 깃허브 아이디"
   header-img: "post-bg-xxxxx"  (assets/img/header_bg 안의 파일명만 입력하면 됩니다)
-  categories: [Xxxxxx] ( 반드시 첫글자는 대문자 / 사용가능 범주 - Javascript, Node.js, Python, Network, Security, Html&css, Marketing, Startup, Etc )
+  categories: [Xxxxxx] ( 반드시 첫글자는 대문자 / 사용가능 범주 - Javascript, Node.js, ML&Statistics, React, Marketing, Startup, Etc )
   tags: [xxxx,xxxx]
   icon: icon-xxxxxxxx (대부분의 언어들을 소문자로 xxxxxxxx에 쓰면됩니다)
   ---

@@ -9,17 +9,11 @@
 - name: Node.js
   href: /node.js/
 
-- name: Python
-  href: /python/
+- name: ML&Statistics
+  href: /ml-statistics/
 
-- name: Network
-  href: /network/
-
-- name: Security
-  href: /security/
-
-- name: Html&Css
-  href: /html&css/
+- name: React
+  href: /react/
 
 - name: Marketing
   href: /marketing/
