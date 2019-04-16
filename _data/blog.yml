@@ -9,11 +9,11 @@
 - name: Node.js
   href: /node.js/
 
+- name: React.js
+  href: /react.js/
+
 - name: ML&Statistics
   href: /ml-statistics/
-
-- name: React
-  href: /react/
 
 - name: Marketing
   href: /marketing/
