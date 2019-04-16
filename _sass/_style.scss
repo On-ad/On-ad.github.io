@@ -1967,7 +1967,7 @@ ul.clear-list:first-child {
     border-bottom: 1px solid #e7eaec;
   }
   &:hover {
-    background: #dddd;
+    background: #rgba(235, 235, 235, 0.867);
     .vote-icon {
       color: rgb(99, 159, 248);
     }
@@ -3932,7 +3932,7 @@ body {
 .blog-item-container .col-md-12 {
   text-align: center;
   &:hover {
-    background: #dddd;
+    background: rgba(235, 235, 235, 0.867);
     .vote-icon {
       color: rgb(99, 159, 248);
     }
