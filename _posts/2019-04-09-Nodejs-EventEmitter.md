@@ -2,7 +2,7 @@
 layout:     post
 title:      "서버의 밑바닥, EventEmitter"
 desc: "server, request, response 등 다양한 객체의 인터페이스인 EventEmitter 에 대해 알아보자."
-date:    2019-04-05 
+date:    2019-04-09
 writer: 박찬우
 about-me: "교육과장 박찬우입니다.
  진짜친구 구합니다."
