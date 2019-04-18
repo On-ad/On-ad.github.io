@@ -16,7 +16,7 @@ icon: icon-reactjs
 
 # React?
 
-<img src="/static/assets/img/post_img/hwasurr/react-angular-vue.png">
+<img src="/static/assets/img/post_img/hwasurr/react-angular-vue.png" style="width:200px;">
 
 리액트는 **Virtual-DOM** 을 사용하여 실제 DOM 을 업데이트한다.  
 리액트에서 데이터가 변하여 웹 브라우저의 실제 DOM 을 업데이트하는 과정은 다음과 같다.
