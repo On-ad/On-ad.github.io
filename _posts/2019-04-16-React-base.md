@@ -16,7 +16,7 @@ icon: icon-reactjs
 
 # React?
 
-<img src="../static/assets/img/post_img/hwasurr/react-angular-vue.png">
+<img src="/static/assets/img/post_img/hwasurr/react-angular-vue.png">
 
 리액트는 **Virtual-DOM** 을 사용하여 실제 DOM 을 업데이트한다.  
 리액트에서 데이터가 변하여 웹 브라우저의 실제 DOM 을 업데이트하는 과정은 다음과 같다.
@@ -38,7 +38,7 @@ icon: icon-reactjs
 
 npm은 패키지를 설치하고 관리할 때 사용된다. 매우 간편하며 유용한 패키지 관리자 이지만, **의존하는 라이브러리 개수가 많으면 속도가 저하**되고 의존하는 버전이 설치되는 시점을 기준으로 결정하기 때문에 설치하는 시기에 따라 다른 버전을 설치할 가능성이 있다는 이슈가 있다.
 
-![yarn](얀이미지)
+<img src="/static/assets/img/post_img/hwasurr/yarn.png" style="width:100px;">
 
 yarn 은 npm 의 문제점을 개선한 패키지 관리자로, npm 을 대체할 수 있다. 이 도구를 사용하면 패키지를 훨씬 빠르게 설치할 수 있다.  
 [윈도우 설치 링크&rarr;](https://yarnpkg.com/lang/en/docs/install/#windows-stable)  
@@ -118,4 +118,5 @@ class App extends Component {
 
 App 이라는 클래스를 생성하는데, 리액트 라이브러리 내부에 있는 Component 클래스를 상속하여 생성한다. 리액트의 컴포넌트들은 모두 Component를 상속하여 생성한다. (함수형 컴포넌트도 존재한다. - 이후)
 
-리액트 컴포넌트는 멤버함수로 
+리액트 컴포넌트는 멤버함수 `render()` 를 무.조.건 가지고 있어야 한다. 이 함수는 컴포넌트를 유저에게 어떻게 보일지를 설정해 줄 수 있다. 마치 HTML을 작성한 듯 보이는데, 이는 `JSX` 라는 리액트만의 확장문법이다. (이는 번들링 시 babel-loader에 의해 자바스크립트 코드로 읽어진다.)
+
