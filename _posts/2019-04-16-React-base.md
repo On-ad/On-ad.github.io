@@ -413,3 +413,37 @@ PropTypes 의 설정 종류는 다음과 같다.
 **컴포넌트 내부에서 읽고 또 업데이트할 수 있는 값을 사용하려면 state를 써야한다.**  
 이것은 언제나 **기본값을 미리 설정해야 사용할 수 있고**, **무.조.건 `this.setState()` 메서드를 통해 업데이트 해야한다.**
 
+state를 설정하려면 컴포넌트의 생성자 메서드인 constructor (파이썬의 __init__과 비슷) 내부에서 설정해야 한다.
+
+state의 초깃값을 설정하는 방법은 다음과 같고, `this.state.name` 과 같이 접근할 수 있다.
+
+~~~js
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+class MyComponent extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            number: 0,
+            name: '따이섭'
+        }
+    }
+    render() {
+        return(
+            <div>{this.state.number}번 {this.state.name}님 안녕하세요!</div>
+        )
+    }
+}
+~~~
+
+직접 constructor 메서드를 작성하여 생성자 메서드에서 추가 작업을 하려면, 메서드 내부에서 부모 클래스인 Component의 constructor 메서드를 먼저 호출해야한다. 이때, super 키워드를 사용한다. 컴포넌트를 만들 때 props 값들을 사용하므로 props를 메서드의 파라미터로 전달한다.  
+
+state 값을 업데이트하는 setState() 메서드를 사용한다.  
+
+버튼을 누를 때마다 number 값이 1이 올라가는 컴포넌트를 만들어 보자.
+
+~~~js
+render() {
+    
+}
