@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Front-end는 React다."
-date:   2019-04-16
-desc: "자바스크립트의 프론트엔드 라이브러리 리엑트에 대한 내용!"
+title:  "리액트의 기본!"
+date:   2019-04-19
+desc: "자바스크립트의 프론트엔드 라이브러리 리엑트의 가장 기본적인 내용들"
 writer: 강화수
 about-me: "OnAD의 개발자 강화수입니다. 지속적인 성장을 추구합니다."
 github_id: "hwasurr"
@@ -14,7 +14,7 @@ icon: icon-reactjs
 # /static/assets/img/post_img/hwasurr/
 ---
 
-# React?
+## React?
 
 <img src="/static/assets/img/post_img/hwasurr/react-angular-vue.png" style="width:400px;">
 
@@ -137,6 +137,8 @@ ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
 ~~~
 
+### JSX의 규칙
+
 JSX는 매우 편리한 문법인데, 올바르게 사용하고자 한다면 몇가지 규칙을 준수해야 한다.
 
 1. `render()` 함수의 리턴값은 무조건 요소 하나로 감싸져 있어야한다. (div, React.Frgment 등.)
@@ -251,4 +253,163 @@ JSX는 매우 편리한 문법인데, 올바르게 사용하고자 한다면 몇
                 </div>
     ~~~
 
-5. HTML 에서의 class 대신 JSX에서는 className!!
+5. HTML 에서의 class 대신 JSX에서는 className!! class 키워드는 이미 자바스크립트에 존재하는 키워드이기 때문이다.
+
+    ~~~html
+    <div className="my-div">
+    ~~~
+
+6. 태그는 꼭 닫아야한다. HTML의 경우 input 등의 태그는 닫지 않아도 문제가 생기지 않는다만, JSX에서는 언제나 태그를 닫아주어야 한다.
+
+    ~~~js
+    render() {
+        return (
+            <form>
+                First name: <br/>
+                <input type="text" name="name"></input>
+            </form>
+    }
+    ~~~
+
+7. 주석은 `{/* 주석 내용 */}`과 같이 사용한다 `//` 나 `/* */` 등을 사용하면 페이지에 고스란히 렌더링되는것을 볼 수 있을 것이다.
+
+    ~~~js
+    render() {
+        return (
+            {/* 주석은 이렇게 */}
+        )
+    }
+    ~~~
+
+## 컴포넌트
+
+리액트를 사용하여 애플리케이션의 인터페이스를 설계할 때, 요소 요소는 여러 컴포넌트들로 구성되어 있다. 예를 들면, Header의 컴포넌트, content가 들어가는 컴포넌트, 아래의 Footer가 들어갈 컴포넌트 등 여러 컴포넌트를 제작하고 재사용할 수 있다.  
+
+컴포넌트는 **단순한 템플릿의 역할만을 가지는 것이 아니다.** 데이터가 주어졌을 때, 이에 맞추어 UI를 만들어 주는 것은 물론이고, LifeCycle API 를 통해서 컴포넌트가 화면에 나타날 때, 사라질 때, 변화가 일어날때등 여러 상황에서 주어진 작업들을 처리하게 할 수 있으며, 메서드를 만들어 특별한 기능들을 추가할 수 있다.  
+컴포넌트가 가지는 데이터는 props와 state로 나누어 볼 수 있다.
+
+### 컴포넌트의 작성
+
+MyComponent.js 를 하나 만들어 보자.  
+
+~~~js
+import React, {Component} from 'react';
+
+class MyComponent extends Component {
+    render() {
+        return (
+            <div>나의 새롭고 멋진 컴포넌트</div>
+        )
+    }
+}
+
+// 이 컴포넌트를 내보내어 다른 컴포넌트의 하위 컴포넌트로 사용하기
+export default MyComponent;
+~~~
+
+이 컴포넌트를 App.js 에서 MyComponent를 불러와 사용해 보자.
+
+~~~js
+import React, { Component } from 'react';
+import MyComponent from './MyComponent';
+
+class App extends Component {
+    render() {
+        return (
+            <MyComponent/>
+        );
+    }
+}
+~~~
+
+이와 같이 다른 JS 파일에서 컴포넌트를 불러와 태그처럼 사용할 수 있다.
+
+### props
+
+props 는 properties를 줄인 표현으로, 컴포넌트 속성을 설정할 때 사용하는 요소이다. props 값은 해당 컴포넌트를 불러와 사용하는 부모 컴포넌트에서만 설정할 수 있다. **자식 컴포넌트에서는 props값을 읽는것만 가능하다.**  
+앞의 예제에서 부모 컴포넌트인 App 에서 MyComponent에 props 값을 보내는 방법은 다음과 같다.
+
+~~~js
+render() {
+        return (
+            <MyComponent name="온애드"/>
+        );
+    }
+~~~
+
+이렇게 보낸 props 값 name을 MyComponent 에서 접근하기위해서는 다음과 같이 할 수 있다.
+
+~~~js
+class MyComponent extends Component {
+    render() {
+        return (
+            <div>보낸 props? {this.props.name}</div>
+        )
+    }
+}
+~~~
+
+props의 값을 설정하는 방법은 defaultProps 프로퍼티를 오버라이딩하는 것이다.
+다음의 방법으로 기본값을 설정할 수 있다.
+
+~~~js
+class MyComponent extends Component {
+    static defaultProps = {
+        name: '기본 props.name 설정'
+    };
+
+    render() {
+        return (
+            <div>보낸 props? {this.props.name}</div>
+        )
+    }
+}
+~~~
+
+### props의 검증 : propTypes
+
+컴포넌트의 필수 props 를 지정하거나, props의 타입을 지정할 때는 propTypes 를 사용한다.  
+
+~~~js
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+
+class MyComponent extends Component {
+    static defaultProps = {
+        name: '기본값'
+    }
+    static propTypes = {
+        name: PropTypes.string,  // name props를 문자열 타입으로 설정
+        // age props는 필수적으로 존재해야하며, 숫자여야한다.
+        age: PropTypes.number.isRequired
+    }
+    render() {
+        .....
+    }
+}
+~~~
+
+PropTypes 의 설정 종류는 다음과 같다.
+
+| 종류                        | 설명            |
+| ------------------------- | ------------- |
+| array                     | 배열            |
+| bool                      | 참 거짓          |
+| func                      | 함수            |
+| number                    | 숫자            |
+| object                    | 객체            |
+| string                    | 문자열           |
+| symbol                    | Symbol객체      |
+| node                      | 렌더링할수 있는 모든것  |
+| element                   | 리액트 요소        |
+| oneOf(['male', 'female']) | 주어진 배열의 값중 하나 |
+| any                       | 아무 종류         |
+
+리액트 프로젝트를 개인이 진행한다면 꼭 필요한 것은 아니지만, 협업 프로젝트라면 해당 컴포넌트에 어떤 props가 필요한지 잘 알 수 있으므로 명시한다면 개발 능률을 올릴 수 있다.
+
+### state
+
+앞서 보았던 props 는 부모 컴포넌트가 설정하여 넘겨주는 값이었다. 또한, props는 읽기 전용으로만 사용할 수 있다.  
+**컴포넌트 내부에서 읽고 또 업데이트할 수 있는 값을 사용하려면 state를 써야한다.**  
+이것은 언제나 **기본값을 미리 설정해야 사용할 수 있고**, **무.조.건 `this.setState()` 메서드를 통해 업데이트 해야한다.**
+
