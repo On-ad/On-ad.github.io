@@ -391,19 +391,19 @@ class MyComponent extends Component {
 
 PropTypes 의 설정 종류는 다음과 같다.
 
-| 종류                        | 설명            |
-| ------------------------- | ------------- |
-| array                     | 배열            |
-| bool                      | 참 거짓          |
-| func                      | 함수            |
-| number                    | 숫자            |
-| object                    | 객체            |
-| string                    | 문자열           |
-| symbol                    | Symbol객체      |
-| node                      | 렌더링할수 있는 모든것  |
-| element                   | 리액트 요소        |
-| oneOf(['male', 'female']) | 주어진 배열의 값중 하나 |
-| any                       | 아무 종류         |
+| 종류                          | 설명            |
+| --------------------------- | ------------- |
+| `array`                     | 배열            |
+| `bool`                      | 참 거짓          |
+| `func`                      | 함수            |
+| `number`                    | 숫자            |
+| `object`                    | 객체            |
+| `string`                    | 문자열           |
+| `symbol`                    | Symbol객체      |
+| `node`                      | 렌더링할수 있는 모든것  |
+| `element`                   | 리액트 요소        |
+| `oneOf(['male', 'female'])` | 주어진 배열의 값중 하나 |
+| `any`                       | 아무 종류         |
 
 리액트 프로젝트를 개인이 진행한다면 꼭 필요한 것은 아니지만, 협업 프로젝트라면 해당 컴포넌트에 어떤 props가 필요한지 잘 알 수 있으므로 명시한다면 개발 능률을 올릴 수 있다.
 
@@ -437,13 +437,49 @@ class MyComponent extends Component {
 }
 ~~~
 
-직접 constructor 메서드를 작성하여 생성자 메서드에서 추가 작업을 하려면, 메서드 내부에서 부모 클래스인 Component의 constructor 메서드를 먼저 호출해야한다. 이때, super 키워드를 사용한다. 컴포넌트를 만들 때 props 값들을 사용하므로 props를 메서드의 파라미터로 전달한다.  
+직접 constructor 메서드를 작성하여 생성자 메서드에서 추가 작업을 하려면, 메서드 내부에서 부모 클래스인 Component의 constructor 메서드를 먼저 호출해야한다. 이때 super 키워드를 사용한다. 컴포넌트를 만들 때 props 값들을 사용하므로 props를 메서드의 파라미터로 전달한다.  
 
-state 값을 업데이트하는 setState() 메서드를 사용한다.  
+state 값을 업데이트기 위해서는 setState() 메서드를 반드시 사용하여야 한다. 사용하는 방법은 다음과 같다.
 
-버튼을 누를 때마다 number 값이 1이 올라가는 컴포넌트를 만들어 보자.
+~~~js
+this.setState({
+    수정할 필드 이름: 값,
+    수정할 또 다른 필드 이름: 값
+})
+~~~
+
+버튼을 누를 때마다 number 값이 1이 올라가는 컴포넌트를 만들어 보자.  
+버튼을 누를 때마다 `this.setState()` 함수를 실행하도록 설정했다. 함수를 만들 때는 ES6의 화살표 함수를 사용했다. 화살표 함수는 this가 자신이 종속된 인스턴스를  가리키기 때문에 유용하게 쓰일 수 있다. (일반 함수는 자신이 종속된 객체를 가리킨다.)
 
 ~~~js
 render() {
-    
+    return (
+        <div>
+            <p>숫자 : {this.state.number}</p>
+            <button onClick={ () => {
+                this.setState({
+                    number: this.state.number + 1
+                })
+            }}>더하기</button>
+        </div>
+    )
 }
+~~~
+
+위에서 state 를 constructor 메서드 안에서 설정 방법을 보았는데, 이를 더욱 간단히 정의할 수 있는 방법이 있다.
+
+~~~js
+class MyComponent extends Component {
+    state = {
+        number: 0,
+        name: 'park찬우'
+    }
+
+    render() {
+        return (...)
+    }
+}
+~~~
+
+기모띠 라는 말이 절로 나올 정도로 간편하다!  
+다시한번 주의사항을 환기 시키면 state 의 값을 업데이트 할 때는 언제나 setState() 메서드로만 업데이트 해야한다. 이 메서드는 파라미터로 전달받은 필드를 업데이트 한 후 컴포넌트를 리렌더링 하도록 트리거하는 것이다. setState() 를 사용하는 방법이 아닌 state 에 직접적으로 접근하여 값을 수정하면 컴포넌트를 자동으로 리렌더링 하지 않는다.
